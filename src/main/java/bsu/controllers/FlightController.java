@@ -23,7 +23,7 @@ public class FlightController {
     @PostMapping("/search")
     public ResponseEntity<List<FlySearchResponse>> handlePostRequest(@Valid @RequestBody FlySearchRequest request) {
 
-        log.info("Floght Controller ");
+        log.info("Floght Controller change from github");
 
         List<FlySearchResponse> response = flightService.getFlyight(request);
         return new ResponseEntity<>(response, HttpStatus.OK);
